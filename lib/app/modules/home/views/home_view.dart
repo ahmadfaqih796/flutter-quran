@@ -12,7 +12,9 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeView'),
+        title: const Text('Surah',
+            style: TextStyle(
+                color: Colors.white, fontSize: 25.0, letterSpacing: 1.2)),
         centerTitle: true,
         toolbarHeight: 60.2,
         toolbarOpacity: 0.8,
@@ -23,7 +25,7 @@ class HomeView extends GetView<HomeController> {
         ),
         actions: <Widget>[
           IconButton(
-            icon: const Icon(Icons.settings),
+            icon: const Icon(Icons.settings, color: Colors.white),
             tooltip: 'Setting Icon',
             onPressed: () {
               showMenu(
